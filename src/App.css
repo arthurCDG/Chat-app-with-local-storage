@@ -1,0 +1,196 @@
+/* SETUP */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fd8c16;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  color: #486ae4;
+}
+
+h1, h2, h3 {
+  color: white
+}
+
+/* APP STYLING */
+
+.App {
+  width: 90vw;
+}
+
+.App, .login-form, .right-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#username-input, #password-input {
+  margin: 10px 0;
+  width: 350px;
+  padding-left: 20px;
+  border: none;
+}
+
+#username-input, #password-input, .btn {
+  border-radius: 10px;
+  height: 32px;
+}
+
+.btn {
+  width: fit-content;
+  padding: 0 30px;
+  background: #486ae4;
+  color: white;
+  border: none;
+}
+
+.app-frame {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.left-menu {
+  width: 30%; 
+  height: 100%;
+  border: 1px solid #486ae4;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.top-left-menu {
+  padding: 10px 20px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  background: #486ae4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-other-users {
+  height:100%
+}
+
+.user-frame {
+  padding: 5px 10px;
+}
+
+.user-frame:hover {
+  background: rgb(207, 207, 243);
+  cursor: pointer;
+}
+
+.right-chat {
+  width: 70%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid #486ae4;
+  border-bottom: 1px solid #486ae4;
+}
+
+.top-right-chat {
+  height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  background: #486ae4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  border-top: 1px solid #486ae4;
+  border-bottom: 1px solid #486ae4;
+}
+
+.message-box-and-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+  padding: 5px 20px;
+  align-items: center;
+}
+
+#message-box {
+  border-radius: 10px;
+  padding-left: 10px;
+  height: 32px;
+  width: 80%;
+  border: 1px solid #486ae4;
+}
+
+.right-msg-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+  
+}
+
+.left-msg-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.right-msg {
+  width: fit-content;
+  max-width: 60%;
+  justify-self: right;
+  border-radius: 20px;
+  background: rgb(119, 209, 119);
+  padding: 5px 20px;
+}
+
+.left-msg {
+  width: fit-content;
+  max-width: 60%;
+  align-self: left;
+  border-radius: 20px;
+  background: rgb(207, 207, 207);
+  padding: 5px 20px;
+}
